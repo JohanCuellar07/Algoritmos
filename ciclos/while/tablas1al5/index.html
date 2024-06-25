@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla del 1 hasta el 5</title>
+</head>
+<body>
+    <script>
+        let resul;
+        let cont = 0;
+        let contPar = 0;
+        let contImpar = 0;
+        let numTab = 0;
+        let numHas = 5;
+
+        while(numTab < numHas){
+            numTab = numTab + 1;
+            while(cont < numHas){
+                cont = cont + 1;
+                resul = numTab * cont;
+                console.log(""+numTab,"X "+cont,"= "+resul);
+                if(resul%2 == 0){
+                    contPar = contPar + 1;
+                    console.log("buzz");
+                }
+                else{
+                    contImpar = contImpar + 1;
+                    console.log("bass");
+                }
+            }
+            cont = 0;
+        }
+        console.log("resultado pares: "+contPar);
+        console.log("resultado impares: "+contImpar);
+    </script>
+</body>
+</html>

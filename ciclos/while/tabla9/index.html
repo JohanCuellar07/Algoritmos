@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla del 9</title>
+</head>
+<body>
+    <script>
+        let resul;
+        let cont = 0;
+        let numTab = 9;
+        let numHas = 5;
+
+        while(cont < numHas){
+            cont = cont + 1;
+            resul = numTab * cont;
+            console.log(""+numTab,"X "+cont,"= "+resul);
+            if(resul%2 == 0){
+                console.log("resultado par");
+            }
+            else{
+                console.log("resultado impar");
+            }
+        }
+    </script>
+</body>
+</html>

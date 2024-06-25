@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular edades y promedio</title>
+</head>
+<body>
+    <script>
+        let promedio, edad1, edad2,edad3;
+        let anioAct = 2024;
+        let anioNac1 = 1976;
+        let anioNac2 = 2001;
+        let anioNac3 = 2011;
+
+        edad1 = anioAct - anioNac1;
+        edad2 = anioAct - anioNac2;
+        edad3 = anioAct - anioNac3;
+
+        promedio = (edad1 + edad2 + edad3)/3;
+
+        if(edad1>17){
+            console.log(""+edad1,", es mayor de edad");
+        }
+        else{
+            console.log(""+edad1,", es menor de edad");
+        }
+        if(edad2>17){
+            console.log(""+edad2,", es mayor de edad");
+        }
+        else{
+            console.log(""+edad2,", es menor de edad");
+        }
+        if(edad3>17){
+            console.log(""+edad3,", es mayor de edad");
+        }
+        else{
+            console.log(""+edad3,", es menor de edad");
+        }
+        if(promedio>17){
+            console.log(""+promedio,", promedio es mayoría de edad");
+        }
+        else{
+            console.log(""+promedio,", promedio es menor de edad");
+        }
+    </script>
+</body>
+</html>

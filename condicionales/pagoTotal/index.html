@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago Total de un persona</title>
+</head>
+<body>
+    <script>
+        let salud, pension, arl, retencion, deducibles, salarioSub, salarioRet, pagoTotal;
+        let salario = 2000000;
+        let salarioMin = 1300000;
+        let subsidioTra = 162000;
+
+        salud = salario * 0.12;
+        pension = salario * 0.16;
+        arl = salario * 0.052;
+
+        deducibles = salud + pension + arl;
+        retencion = salario * 0.04;
+
+        if(salario > salarioMin * 2){
+            salarioSub = salario + subsidioTra;
+        }
+        else{
+            salarioSub = salario;
+        }
+        if(salario > salarioMin * 4){
+            salarioRet =salarioSub - retencion;
+        }
+        else{
+            salarioRet = salarioSub;
+        }
+        pagoTotal = salarioRet - deducibles;
+
+        console.log("salario: "+salario);
+        console.log("subsidio de transporte: "+subsidioTra);
+        console.log("salud: "+salud);
+        console.log("pension: "+pension);
+        console.log("arl: "+arl);
+        console.log("retencion: "+retencion);
+        console.log("deducibles: "+deducibles);
+        console.log("Pago Total: "+pagoTotal);
+    </script>
+</body>
+</html>
